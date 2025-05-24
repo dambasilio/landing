@@ -1,18 +1,46 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Courier New', Courier, monospace, sans-serif;
   line-height: 1.6;
   margin: 20px;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #0a0f18;
+  color: #c0c5ce;
 }
 
 h2 {
-  color: #333;
+  color: #82aaff;
 }
 
 div {
-  background-color: #fff;
+  background-color: #101828;
+  border: 1px solid #303f60;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added for smooth hover transition */
+}
+
+div:hover {
+  border-color: #61dafb;
+  box-shadow: 0 0 20px rgba(97, 218, 251, 0.4);
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible-section {
+  opacity: 1;
+  transform: translateY(0);
 }
